@@ -1,0 +1,58 @@
+/* fonts */
+@import "./font.css";
+
+/* reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+:root {
+  /* primary-color */
+  --primary-midnight-green: #014e56;
+  --primary-light-coral: #f67e7e;
+  --primary-white: #ffffff;
+
+  /* secondary-color*/
+  --secondary-rapture-blue: #79c8c7;
+  --secondary-police-blue: #2c6269;
+  --secondary-deep-jungle-green: #004047;
+  --secondary-sacramento-state-green: #012f34;
+  --secondary-dark-green: #002529;
+
+  /* font-families */
+  --font-livic: "Livvic", sans-serif;
+}
+
+body {
+  font-family: var(--font-livic);
+}
+
+/* main style */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1140px;
+}
+
+.header-section {
+  background-image: url("../assets/bg-home.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  min-height: 100vh;
+  padding: 0.1px;
+}
+
+/* navbar */
