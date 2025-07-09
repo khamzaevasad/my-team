@@ -139,12 +139,9 @@ body {
 /* features */
 
 .features {
-  background-image: url("../assets/Group.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left;
-  min-height: 100vh;
-  padding: 0.1px;
+  background-color: var(--secondary-dark-green);
+  position: relative;
+  overflow: hidden;
 }
 
 .features__container {
@@ -227,6 +224,13 @@ body {
   .home__subtitle {
     text-align: center;
   }
+  .features__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
 }
 
 /* phone */
@@ -238,5 +242,58 @@ body {
     background-position: top left;
     min-height: 100vh;
     padding: 0.1px;
+  }
+
+  .features__container {
+    flex-direction: column;
+    gap: 6rem;
+    text-align: center;
+  }
+
+  .features__item__left,
+  .features__item__right {
+    max-width: 100%;
+  }
+
+  .features__line {
+    margin: 0 auto 3rem;
+  }
+
+  .features__heading {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+
+  .features__items {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .features__icon {
+    margin: 0 auto;
+  }
+
+  .features {
+    padding: 8rem 0;
+  }
+
+  .features__heading {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+
+  .features__items {
+    margin-bottom: 4.8rem;
+  }
+
+  .features__title {
+    font-size: 1.6rem;
+  }
+
+  .features__desc {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 }
